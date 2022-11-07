@@ -2,7 +2,7 @@ import streamlit as st
 import yfinance as finance
 import pandas as pd
 import altair as alt
-from datetime import date 
+from datetime import date
 import datetime as dt
 
 import plotly.graph_objs as go
@@ -35,8 +35,8 @@ request_result=requests.get(url)
 soup = bs4.BeautifulSoup(request_result.text, "html.parser")
 heading_object=soup.find_all( 'h3' )
 
-newsapi = NewsApiClient(api_key='')
-co = cohere.Client('')
+newsapi = NewsApiClient(api_key='81945b20aa7547bd8a0066b30c989955')
+co = cohere.Client('19V72BKoutucEkQ7l7jOFgPhotWKJkyeyltSBabt')
 
 count = 0
 init=[]
