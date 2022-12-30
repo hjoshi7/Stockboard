@@ -4,4 +4,4 @@ Implemented NLP-based sentiment analysis using co:here to predict the impact on 
 Built a dashboard using Altair that visualizes predicted bear-bull market
 Technologies Utilized: python, Altair, beautiful-soup, co:here, newsapi, pyplot, streamlit, yfinance
 
-Try it out here: https://stockboard.streamlit.app/
+Try it out here: https://stockboard-final.streamlit.app/
