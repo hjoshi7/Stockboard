@@ -47,7 +47,7 @@ for info in heading_object:
         break
 
 
-response = co.classify(model='xlarge', inputs=init)
+response = co.classify(model='large', inputs=init)
 #print('The confidence levels of the labels are: {}'.format(
        #response.classifications))
 #def get_result(result): # takes result of applying cohere classify
