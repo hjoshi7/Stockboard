@@ -23,13 +23,14 @@ user_input = st.text_input("Stock", 'MSFT')
 
 brk = finance.Ticker(user_input)
 
+x = brk.info['shortName']
 start = st.date_input("Date", dt.datetime(2022, 9, 1))
-st.header(brk.info['shortName'])
+st.header(x)
 
 county = st.slider('Sample Size', 1, 50, 25)
 
 
-x = brk.info['shortName']
+
 url = 'https://news.google.com/search?q='+ x
 request_result=requests.get(url)
 soup = bs4.BeautifulSoup(request_result.text, "html.parser")
